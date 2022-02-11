@@ -9,7 +9,7 @@ The user edits the variables in Section 1 of 'run_lidr_grid_metrics.r' before ru
 1.	Lower Strata Density metrics (0-1 m) differ appreciably in some cases; the reason is likely differences in height normalization. This script relies upon on-the-fly TIN normalization available in lidR, but normalization could be done using a DTM in lidR or with LAStools (which might be faster). This difference in normalization also explains some of the slight differences in the >2 m metrics.
 2.	The three topographic curvature outputs differ quite a bit, even though they are based on the same paper. My script uses the curvature functions of Jeff Evan’s spatialEco R package. I went to the paper to see about recoding curvature from scratch, but looked at it for about 1 minute and decided that I probably couldn’t improve upon Bob or Jeff.
 3.	That CHM-based FPV variable – I threw in the towel trying to figure out how to implement that in R. I thought I came up with some logic for a least a weak imitation, but my logic is no bueno, since values should be between 0-1.
-4.	The other CHM metrics, including rumple, agree well, but do differ. Again, lidR’s rumple and FUSION’s rumple were developed based on the same concept, but because of different implementations/interpretations they differ.
+4.	The other CHM metrics, including rumple, agree well, but do differ. lidR’s rumple and FUSION’s rumple were developed based on the same concept, but because of different implementations/interpretations they differ.
 5.	Other differences likely exist. I haven't extensively evaluated each of the many metrics.
 
 # Limitations
