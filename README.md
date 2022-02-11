@@ -1,9 +1,9 @@
 # imitate_FUSION_with_lidR
 # Summary
-These scripts are designed to imitate some FUSION gridmetric ouputs (http://forsys.cfr.washington.edu/FUSION/fusion_overview.html) with the R lidR package (https://cran.r-project.org/web/packages/lidR/lidR.pdf).
+These scripts are designed to imitate some [FUSION](http://forsys.cfr.washington.edu/FUSION/fusion_overview.html) gridmetric ouputs with the [R lidR package](https://cran.r-project.org/web/packages/lidR/lidR.pdf).
 
 # How to run
-The user edits the variables in Section 1 of 'run_lidr_grid_metrics.r' before running. 'run_lidr_grid_metrics.r' calls 'Metrics.r' as well as the 'lasindex' (free without license) and 'blast2dem' (not free) functions of LAStools (https://rapidlasso.com/lastools/). If a LAStools license is not available, another method could be used to create a bare-earth digital terrain model. 
+The user edits the variables in Section 1 of 'run_lidr_grid_metrics.r' before running. 'run_lidr_grid_metrics.r' calls 'Metrics.r' as well as the 'lasindex' (free without license) and 'blast2dem' (not free) functions of [LAStools](https://rapidlasso.com/lastools/). If a LAStools license is not available, another method could be used to create a bare-earth digital terrain model (DTM). 
 
 # Differences between this output and FUSION
 1.	Lower Strata Density metrics (0-1 m) differ appreciably in some cases; the reason is likely differences in height normalization. This script relies upon on-the-fly TIN normalization available in lidR, but normalization could be done using a DTM in lidR or with LAStools (which might be faster). This difference in normalization also explains some of the slight differences in the >2 m metrics.
