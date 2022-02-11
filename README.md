@@ -1,6 +1,6 @@
 # imitate_FUSION_with_lidR
 # Summary
-These scripts are designed to imitate some [FUSION](http://forsys.cfr.washington.edu/FUSION/fusion_overview.html) gridmetric ouputs with the [R lidR package](https://cran.r-project.org/web/packages/lidR/lidR.pdf).
+These scripts are designed to imitate some [FUSION](http://forsys.cfr.washington.edu/FUSION/fusion_overview.html) gridmetric ouputs with the [lidR R package](https://cran.r-project.org/web/packages/lidR/lidR.pdf).
 
 # How to run
 The user edits the variables in Section 1 of 'run_lidr_grid_metrics.r' before running. 'run_lidr_grid_metrics.r' calls 'Metrics.r' as well as the 'lasindex' (free without license) and 'blast2dem' (not free) functions of [LAStools](https://rapidlasso.com/lastools/). If a LAStools license is not available, another method could be used to create a bare-earth digital terrain model (DTM). 
