@@ -14,4 +14,4 @@ The user edits the variables in Section 1 of 'run_lidr_grid_metrics.r' before ru
 
 # Limitations
 1.	For a reason unknown to me, I have to run the CHM-based metrics in a separate R session. In other words, if you copy and paste the entire script into an R window, it will crash at the last section, 4.4 (the CHM metrics section). So to run the CHM metrics you need to paste Section 1., Section 4.1, and then Section 4.4.
-2.	Lastly, this was only tested/developed on one small test set of 2.6 GB of laz. Running on other acquisitions might reveal issues. I don’t know how well it’d scale with a large acquisition of say 200 GB worth of laz on a normal workstation (16 GB memory); I suspect it would either crash or take a long time to process a much bigger acquisitions.
+2.	Lastly, this was only tested/developed on one small test set of 2.6 GB of laz. Running on other acquisitions might reveal issues. I don’t know how well it’d scale with a large acquisition of say 200 GB worth of laz on a normal workstation (16 GB memory); I suspect it would either crash or take a long time to process a much bigger acquisition.
